@@ -1,0 +1,30 @@
+[versions]
+groovy = "2.4.21"
+slf4j = "2.0.12"
+logback-classic = "1.4.14"
+junit-bom = "5.10.2"
+junit-jupiter = "5.10.2"
+groovy-cps = "1.31"
+commons-lang3 = "3.14.0"
+mockito = "5.11.0"
+gson = "2.10.1"
+httpclient5 = "5.3.1"
+pebble = "3.2.2"
+
+[libraries]
+groovy = { module = "org.codehaus.groovy:groovy-all", version.ref = "groovy" }
+slf4j = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback-classic" }
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junit-bom" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter" }
+groovy-cps = { module = "com.cloudbees:groovy-cps", version.ref = "groovy-cps" }
+commons-lang3 = { module = "org.apache.commons:commons-lang3", version.ref = "commons-lang3" }
+mockito = { module = "org.mockito:mockito-junit-jupiter", version.ref = "mockito" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+httpclient5 = { module = "org.apache.httpcomponents.client5:httpclient5", version.ref = "httpclient5" }
+pebble-template = { module = "io.pebbletemplates:pebble", version.ref = "pebble" }
+
+[bundles]
+logback = ["slf4j", "logback-classic"]
+
+[plugins]
